@@ -1,0 +1,20 @@
+{
+  "name": "Anita Family Bakery",
+  "short_name": "Bakery",
+  "start_url": "https://www.bayarqris.my.id/p/anita-family-bakery-toko-roti-terbaik.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "https://pwa-files.vercel.app/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://pwa-files.vercel.app/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
