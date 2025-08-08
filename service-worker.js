@@ -1,6 +1,6 @@
 const CACHE_NAME = 'bakery-cache-v1';
 const urlsToCache = [
-  'https://www.bayarqris.my.id/p/anita-family-bakery-toko-roti-terbaik.html',
+  'https://www.bayarqris.my.id/p/produk-1.html',
   'https://pwa-files.vercel.app/icons/icon-192.png',
   'https://pwa-files.vercel.app/icons/icon-512.png'
 ];
