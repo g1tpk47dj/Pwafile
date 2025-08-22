@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bakery-cache-v1';
+const CACHE_NAME = 'scan QR CODE';
 const urlsToCache = [
   'https://www.bayarqris.my.id/p/produk-1.html',
   'https://pwa-files.vercel.app/icons/icon-192.png',
