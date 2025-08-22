@@ -1,20 +1,15 @@
-const CACHE_NAME = 'scan QR CODE';
-const urlsToCache = [
-  'https://www.bayarqris.my.id/p/produk-1.html',
-  'https://pwa-files.vercel.app/icons/icon-192.png',
-  'https://pwa-files.vercel.app/icons/icon-512.png'
-];
-
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(urlsToCache))
-  );
+// Contoh minimal service-worker.js
+self.addEventListener('install', (event) => {
+  console.log('Service Worker: installed');
+  self.skipWaiting();
 });
 
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => response || fetch(event.request))
-  );
+self.addEventListener('activate', (event) => {
+  console.log('Service Worker: activated');
+  event.waitUntil(self.clients.claim());
+});
+
+self.addEventListener('fetch', (event) => {
+  // Sederhanakan: selalu fetch dari jaringan
+  event.respondWith(fetch(event.request));
 });
